@@ -1,0 +1,10 @@
+rename table name 
+
+EXEC sp_rename 'old_table_name', 'new_table_name'
+
+make unique data column
+
+ALTER TABLETable_Name Add CONSTRAINT R_Name UNIQUE(Column_Name)
+
+make copy of table
+SELECT * INTO New_table FROM  Old_Table

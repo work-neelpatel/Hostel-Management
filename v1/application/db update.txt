@@ -1,0 +1,29 @@
+del allocated_stud_m
+del comp_c
+add years of course in clg_stud_m
+del result from comp_M
+del document_m
+del hostel_avail_facilities
+del hostel_doc_t
+del hostel_facility_m
+del hostel_img_T
+del hostel_m
+del hostelid from Hostel_reviwe_t
+del hostel_seats_criteria
+add message_type in notice_c
+del hostel_id from NOtice_t
+del PNotice_t 
+del seat_allocated_c
+del security_qa_m
+del stud_acad_t
+del stud_communication
+del stud_hostel_doc_t
+add mother name,mother mobile, dot of hostel,doj of college,year join college in stud_m
+del sq que, sq ans, year ,allocate
+del subcategory_m
+del user_t
+add new email, old email, new recovery email, old recovery email 
+
+
+make new table for requested student data
+make table to store hostel details

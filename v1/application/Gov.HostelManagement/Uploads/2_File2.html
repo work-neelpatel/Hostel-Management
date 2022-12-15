@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Notice Box</title>
+<meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="description" /><meta name="author" />
+
+      <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+     <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" /><link href="css/update.css" rel="stylesheet" /><title>
+
+</title></head>
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-ljcca sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="NoticeBox">
+        <div class="sidebar-brand-icon ">
+          <img src="img/ljcca-logo.png" width="60px"/>
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-heading">
+        Messages
+      </div>
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="MessageBox">
+          <i class="fas fa-fw fa-inbox"></i>
+          <span>Message Box</span></a>
+      </li>
+
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="HNoticeBox">
+          <i class="fas fa-fw fa-comment"></i>
+          <span>Notice Box</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="HComplainBox">
+          <i class="fas fa-fw fa-exclamation-triangle"></i>
+          <span>Complain Box</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="HRequestBox">
+          <i class="fas fa-fw fa-comments"></i>
+          <span>Request Box</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-heading">
+        Seats
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="Merit">
+          <i class="fas fa-fw fa-list-alt"></i>
+          <span>Merit</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="StudentsList">
+          <i class="fas fa-fw fa-bed"></i>
+          <span>Seats</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-heading">
+        Profiles
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="SearchStudent">
+          <i class="fas fa-fw fa-user"></i>
+          <span>Student Profile</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="HostelProfile">
+          <i class="fas fa-fw fa-building"></i>
+          <span>Hostel Profile</span></a>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="Login" data-toggle="modal" data-target="#logoutModal">
+          <i class="fas fa-fw fa-sign-out-alt"></i>
+          <span>Logout</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+    </ul>
+    <!-- End of Sidebar -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Icnos -->
+          <div class="col-lg-9 m-0 p-0">
+            <h1 class="gradient-text font-weight-bold" id="hiddenslider">LJ HOSTELS</h1>
+            <!--<a href="NoticeBox" class="mr-3 text-primary col-2"><i class="fas fa-fw fa-comment fa-sm"></i></a>
+            <a href="HComplainBox" class="mr-3 text-danger col-2"><i class="fas fa-fw fa-exclamation-triangle fa-sm"></i></a>
+            <a href="HRequestBox" class="mr-3 text-warning col-2"><i class="fas fa-fw fa-comments fa-sm"></i></a>
+            <a href="Merit" class="mr-3 text-info col-2"><i class="fas fa-fw fa-list-alt fa-sm"></i></a>
+            <a href="StudentsList" class="mr-3 text-info col-2"><i class="fas fa-fw fa-bed fa-sm"></i></a>
+            <a href="SearchStudent" class="mr-3 text-primary col-2"><i class="fas fa-fw fa-user fa-sm"></i></a>-->
+          </div>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav">
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="a2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-exclamation-triangle"></i>
+                <!-- Counter - Alerts -->
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header bg-danger">
+                  Complainbox Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-fw fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-fw fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-fw fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="HComplainBox">Show All Complains</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="a3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-comments"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">4</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header bg-warning">
+                  Requestbox Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-fw fa-comments text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-fw fa-comments text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-fw fa-comments text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="HRequestBox">Show All Requests</a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="Username" class="mr-2 d-none d-lg-inline text-gray-600 large font-weight-bold">Admin</span>
+                <img class="img-profile rounded-circle" src="img/hostel-icon.png">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="HostelProfile">
+                  <i class="fas fa-building fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Login" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+        
+        
+        <form method="post" action="./HNoticeDesc" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE0NjI4NzQ2NA9kFgJmD2QWAgIHD2QWAgIBD2QWCgIBDw8WAh4EVGV4dAUNU3ViamVjdDoga2pua2RkAgMPDxYCHwAFCjA3LTE4LTIwMjBkZAIFDw8WAh8ABQgwMToxOCBBTWRkAgcPDxYCHwAFBG5ram5kZAIJDw8WAh8ABRBBdHRlY2hlZCBGaWxlKHMpZGRktkTOzHl4pYWsudH3NkOqxT6MhZB0AqbR5W4t9szUKME=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9BC94DA0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALorVYFumKTLePYqHAFe55mVztW4kmWMudIjLB7uWxCdYqBW4ZXCaDRnqU5pvMiX7MR+jDLnimBTUMEg3jeW2X1" />
+</div>
+    
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Notice Description</h1>
+          </div>
+          <!-- Content Row -->
+          <div class="row">
+
+            <div class="col-lg-12 mb-4">
+              <div class="card shadow mb-4 border-left-primary">
+                <div class="card-header py-3 form-inline">
+                <span id="body_msg_title" class="m-0 p-0 col-10 font-weight-bold text-primary">Subject: kjnk</span>                              
+                  <span id="body_date" class="m-0 p-0 fo mt-1">07-18-2020</span>                              
+                  
+                 <!-- <h6 class="m-0 p-0 col-10 font-weight-bold text-primary">Subject : Hostel Open</h6>
+                  <h6 class="m-0 p-0 fo mt-1">June 11,2020</h6>-->
+                </div>
+                <div class="card-body">
+                  <div class="text-center">
+                    <span id="body_tdiff" class="mb-3 p-0">01:18 AM</span>                              
+                  </div>
+                <div class="mb-3 text-secondary">
+                  <span id="body_msg_body">nkjn</span>  
+                  </div>
+                  
+                  <div class="mb-2 font-weight-bold text-secondary text-center border-bottom">                            
+                   <span id="body_ftitle">Atteched File(s)</span>                              
+                  </div>
+                  <div class="mb-4 col-lg-12">
+                      <div id="body_attech_files" class="p-t-20 p-l-20 p-r-20 list-group text-center">
+	
+                       
+                       <a class="list-group-item border-0" href="javascript:__doPostBack(&#39;ctl00$body$ctl00&#39;,&#39;&#39;)">E:\HACKATHON\Application\WebGov.HostelManagement\Uploads\2_File1.html</a>
+</div>
+                  
+                  </div>
+                  <div class="pt-4">
+                            <a href="HNoticeBox" class="text-decoration-none text-primary">&larr; Go Back </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+
+
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Are you Really want to Logout from this accout?</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="Login">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+features
+24/7 system services
+getting the process done without physically going to the other party for any hostel related work like admission, fees, room allotment other suggestions and grievances
+System should manage available seats, rooms and reallocation of rooms
+Sysem provide other features like News, Complain, Feedback ,profile mangement, fees and other basic services
+report generation  (student wise, building wise, no of rooms empty /occupied etc.)
+automatic room allocation, deallocation and reallocation
+Student Registration, Prepare chart and allocation matrix, Notice board management
+Easy data updating of student profile, rooms, floors and other info 
+easy record keeping - Branchwise, category wise and other record finding and managing 
+Backup data can be easily generated 
+
+life cycle 
+student registration (only take required information for allocation)
+system send registration confirmation message (through mail)
+system allocate seats to studentsa and send invite message
+students needs to responce to the message (submit their fees and get their room and other hostel information)
+theb students can stay at hostel 
+
+deallocation
+system will deallocate that seats who are finish their college or for some other issues (i.e. fees issue, disipline issue)
+and send them message 
+remove the student data from tables and insert into tudents history 
+
+users:
+Super Admin
+Admins
+Students
+Parents
